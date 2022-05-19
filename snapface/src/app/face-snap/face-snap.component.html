@@ -5,7 +5,7 @@
   <img [src]="imageUrl" [alt]="title" />
   <p>Crée le {{ createdDate }}</p>
   <p>
-    <button (click)="onAddSnap()">Oh Snap !</button>
+    <button (click)="onAddSnap()">{{ btnMsg }}</button>
     {{ snaps }}
   </p>
 </div>
