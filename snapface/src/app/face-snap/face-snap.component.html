@@ -4,4 +4,8 @@
   <!-- <img src="{{ imageUrl }}" alt="{{ title }}" /> -->
   <img [src]="imageUrl" [alt]="title" />
   <p>Crée le {{ createdDate }}</p>
+  <p>
+    <button (click)="onAddSnap()">Oh Snap !</button>
+    {{ snaps }}
+  </p>
 </div>
