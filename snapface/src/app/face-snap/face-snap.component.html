@@ -1,2 +1,5 @@
 <h2>{{ title }}</h2>
+<!-- parce que les valeurs associées aux attributs sr et alt ne sont pas toujours de type string, on choisit ma syntaxe en attribut bindi g avec des crochets -->
+<!-- <img src="{{ imageUrl }}" alt="{{ title }}" /> -->
+<img [src]="imageUrl" [alt]="title" />
 <p>Crée le {{ createdDate }}</p>

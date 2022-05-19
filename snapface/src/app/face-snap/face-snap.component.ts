@@ -12,6 +12,7 @@ export class FaceSnapComponent implements OnInit {
   description!: string;
   createdDate!: Date;
   snaps!: number;
+  imageUrl!: string;
 
   /* 2/ Initialisation avec méthode ngOnInit et interface OnInit appelée depuis @angular/core et implementée dans le component*/
   ngOnInit() {
@@ -19,5 +20,7 @@ export class FaceSnapComponent implements OnInit {
     this.description = 'Un compagnon de tout une vie';
     this.createdDate = new Date();
     this.snaps = 6;
+    this.imageUrl =
+      'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg';
   }
 }
