@@ -25,12 +25,14 @@
 } */
 
 /* version avec raccourci : utilisation de public qui permet de supprimer déclarations et initialisations */
+/* Ajout d'une propriété sous condition grâce au ? */
 export class FaceSnap {
   constructor(
     public title: string,
     public description: string,
     public createdDate: Date,
     public snaps: number,
-    public imageUrl: string
+    public imageUrl: string,
+    public location?: string
   ) {}
 }

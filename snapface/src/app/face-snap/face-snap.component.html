@@ -18,6 +18,8 @@
   <!-- <img src="{{ imageUrl }}" alt="{{ title }}" /> -->
   <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
   <p>Crée le {{ faceSnap.createdDate }}</p>
+  <!-- Ajout d'une ditective structurelle avec *ng pour afficher le paragraphe seulement si la condition est vérifiée -->
+  <p *ngIf="faceSnap.location">Image prise à {{ faceSnap.location }}</p>
   <p>
     <button (click)="onAddSnap()">{{ btnMsg }}</button>
     {{ faceSnap.snaps }}
