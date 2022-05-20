@@ -7,7 +7,7 @@ import { FaceSnap } from '../models/face-snap-models';
   styleUrls: ['./face-snap.component.scss'],
 })
 export class FaceSnapComponent implements OnInit {
-  /* 4/ Ajout d'un décorateur Input pour injecter une prooriété depuis un parent. FaceSnap est importé */
+  /* 4/ Ajout d'un décorateur Input pour injecter une propriété depuis un parent. FaceSnap est importé */
   @Input() faceSnap!: FaceSnap;
 
   /* 1/ Déclaration propriétés de classe component */
@@ -32,7 +32,7 @@ export class FaceSnapComponent implements OnInit {
       'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg';
   }
 
-  /* 3/ Création d'une méthode qui incrémnente la valeur de variable snaps */
+  /* 3/ Création d'une méthode qui incrémente la valeur de variable snaps */
   onAddSnap() {
     if (this.snapped == false) {
       this.faceSnap.snaps++;

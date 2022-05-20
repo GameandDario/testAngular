@@ -4,3 +4,10 @@
 <app-face-snap [faceSnap]="mySnap"></app-face-snap>
 <app-face-snap [faceSnap]="myOtherSnap"></app-face-snap>
 <app-face-snap [faceSnap]="myLastSnap"></app-face-snap>
+
+<!-- cloud-face-component -->
+<app-cloud-snap [cloudSnap]="myCloud"></app-cloud-snap>
+<app-cloud-snap [cloudSnap]="my2Cloud"></app-cloud-snap>
+
+<!-- sea-face-compenent avec boucle sur Array -->
+<app-sea-snap *ngFor="let sea of mySeas" [seaSnap]="sea"></app-sea-snap>

@@ -1,0 +1,14 @@
+<div class="sea-snap-card">
+  <h2>{{ seaSnap.title }}</h2>
+  <p>{{ seaSnap.description }}</p>
+  <img [src]="seaSnap.imageUrl" [alt]="seaSnap.title" />
+
+  <!-- Ajout d'une ditective structurelle avec *ng pour afficher le paragraphe seulement si la condition est vérifiée -->
+  <p *ngIf="seaSnap.location">
+    Image prise à {{ seaSnap.location }}, en {{ seaSnap.season }}
+  </p>
+  <p>
+    <button (click)="onAddSnap()">{{ btnMsg }}</button>
+    {{ seaSnap.snaps }}
+  </p>
+</div>

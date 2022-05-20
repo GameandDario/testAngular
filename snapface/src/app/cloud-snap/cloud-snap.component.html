@@ -1,0 +1,14 @@
+<div class="cloud-snap-card">
+  <h2>{{ cloudSnap.title }}</h2>
+  <p>{{ cloudSnap.description }}</p>
+  <img [src]="cloudSnap.imageUrl" [alt]="cloudSnap.title" />
+
+  <!-- Ajout d'une ditective structurelle avec *ng pour afficher le paragraphe seulement si la condition est vérifiée -->
+  <p *ngIf="cloudSnap.location">
+    Image prise à {{ cloudSnap.location }}, en {{ cloudSnap.season }}
+  </p>
+  <p>
+    <button (click)="onAddSnap()">{{ btnMsg }}</button>
+    {{ cloudSnap.snaps }}
+  </p>
+</div>
