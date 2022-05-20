@@ -1,4 +1,4 @@
-<div class="sea-snap-card">
+<div class="snap-card sea-snap-card">
   <h2>{{ seaSnap.title }}</h2>
   <p>{{ seaSnap.description }}</p>
   <img [src]="seaSnap.imageUrl" [alt]="seaSnap.title" />
@@ -9,6 +9,8 @@
   </p>
   <p>
     <button (click)="onAddSnap()">{{ btnMsg }}</button>
-    {{ seaSnap.snaps }}
+    <span [ngStyle]="{ color: 'rgb(0, ' + seaSnap.snaps * 4 + ', 0)' }">{{
+      seaSnap.snaps
+    }}</span>
   </p>
 </div>

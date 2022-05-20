@@ -11,7 +11,7 @@
   </p>
 </div>-->
 
-<div class="face-snap-card">
+<div class="snap-card face-snap-card">
   <h2>{{ faceSnap.title }}</h2>
   <p>{{ faceSnap.description }}</p>
   <!-- parce que les valeurs associées aux attributs sr et alt ne sont pas toujours de type string, on choisit ma syntaxe en attribut bindi g avec des crochets -->
@@ -22,6 +22,8 @@
   <p *ngIf="faceSnap.location">Image prise à {{ faceSnap.location }}</p>
   <p>
     <button (click)="onAddSnap()">{{ btnMsg }}</button>
-    {{ faceSnap.snaps }}
+    <span [ngStyle]="{ color: 'rgb(0,' + faceSnap.snaps * 4 + ', 0)' }">{{
+      faceSnap.snaps
+    }}</span>
   </p>
 </div>

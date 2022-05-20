@@ -1,8 +1,8 @@
 .cloud-snap-card {
-  width: 35%;
-
   img {
-    width: 100%;
-    border-radius: 10px;
+    border: var(--cloudsnapcolor) solid 2px;
+  }
+  button {
+    background-color: var(--cloudsnapcolor);
   }
 }

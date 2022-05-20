@@ -1,6 +1,8 @@
 .face-snap-card {
-  width: 35%;
   img {
-    width: 100%;
+    border: var(--facesnapcolor) solid 2px;
+  }
+  button {
+    background-color: var(--facesnapcolor);
   }
 }

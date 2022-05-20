@@ -1,4 +1,4 @@
-<div class="cloud-snap-card">
+<div class="snap-card cloud-snap-card">
   <h2>{{ cloudSnap.title }}</h2>
   <p>{{ cloudSnap.description }}</p>
   <img [src]="cloudSnap.imageUrl" [alt]="cloudSnap.title" />
@@ -9,6 +9,7 @@
   </p>
   <p>
     <button (click)="onAddSnap()">{{ btnMsg }}</button>
-    {{ cloudSnap.snaps }}
+    <span [ngStyle]="{ color: 'rgb(0,' + cloudSnap.snaps + ',0)' }"></span
+    >{{ cloudSnap.snaps }}
   </p>
 </div>
